@@ -1,0 +1,15 @@
+<section class="posts">
+  <br /><br />
+  <div class="container">
+    <div class="heading">
+      <h2 class="subtitle">
+       <a [routerLink]="'/'">Blog</a> > {{ post.title }}
+      </h2>
+    </div>
+    <br />
+    <div class="columns">  
+        <app-post-card class="column" [post]="post"></app-post-card>
+    </div>    
+  </div>
+  <br /><br />
+</section>

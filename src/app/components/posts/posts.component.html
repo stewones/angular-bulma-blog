@@ -1,0 +1,16 @@
+<section class="posts">
+  <br /><br />
+  <div class="container">
+    <div class="heading">
+      <h2 class="subtitle">
+        <span [hidden]="loading != true">Carregando...</span> Latest <strong>fake</strong> news
+      </h2>
+    </div>
+ 
+    <div class="columns is-desktop is-multiline">  
+        <app-post-card class="column" *ngFor="let post of posts; let i = index" [ngClass]="{'is-half':i==0||i%11==0, 'is-one-quarter':i>0&&i%11!=0}" [post]="post"></app-post-card>
+    </div>    
+
+  </div>
+  <br /><br />
+</section>
