@@ -13,7 +13,7 @@ const routes: Routes = [
     // blog post
     {
         path: ':slug/:id',
-        component: PostPageComponent,
+        component: PostPageComponent
     },
     // handling 404
     {
