@@ -10,12 +10,14 @@
   <div class="card-content">
     <div class="media">
       <div class="media-content">
-        <p class="title is-4"><a [routerLink]="post.router">{{ post.title }}</a></p>
+        <h2 class="title is-4"><a [routerLink]="post.router">{{ post.title }}</a></h2>
       </div>
     </div>
 
     <div class="content">
-      <p [innerHTML]="post.body"></p>
+      <div [innerHTML]="post.body">
+        <!-- aqui vira o conteudo de post.body -->
+      </div>
       <br>
       <small>11:09 PM - 1 Jan 2016</small>
     </div>
